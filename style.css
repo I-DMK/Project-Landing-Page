@@ -213,19 +213,22 @@ nav ul li a {
 }
 
 .cta button {
-    background-color: white;
-    color: #3882F6;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
     font-size: 18px;
     font-weight: bold;
-    padding: 12px 24px;
-    border: none;
+    padding: 12px 36px; /* Adjust padding for better size */
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta button:hover {
-    background-color: #f1f1f1;
+    background-color: white;
+    color: #3882F6;
 }
+
 
 
 /* Footer */
