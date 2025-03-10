@@ -189,12 +189,18 @@ nav ul li a {
     background-color: #3882F6;
     color: white;
     text-align: center;
-    padding: 40px;
-    margin: auto;
-    max-width: 800px;
+    padding: 40px 60px; /* Reduce padding to shrink the box */
+    margin: 60px auto; /* Adds space between CTA and footer */
+    max-width: 900px; /* Slightly increase width for balance */
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.cta-text {
+    text-align: left;
+}
 
 .cta h3 {
     font-size: 24px;
@@ -203,7 +209,7 @@ nav ul li a {
 
 .cta p {
     font-size: 18px;
-    margin: 10px 0;
+    margin-top: 5px;
 }
 
 .cta button {
@@ -216,6 +222,7 @@ nav ul li a {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .cta button:hover {
     background-color: #f1f1f1;
 }
