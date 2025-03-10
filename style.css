@@ -11,6 +11,18 @@ body {
     color: #1F2937;
 }
 
+/* Improve Section Spacing */
+section {
+    margin-bottom: 60px; /* Ensures space between sections */
+}
+
+/* Improve Container Width */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
 /* Header Styles */
 header {
     background-color: #1F2937;
@@ -18,7 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding: 20px 5%;
 }
 
 header h1 {
