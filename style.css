@@ -53,17 +53,15 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-color: #1F2937;
-    color: white;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack items on small screens */
     align-items: center;
-    padding: 100px 10%;
-    gap: 50px;
+    text-align: center;
+    padding: 80px 10%;
 }
 
 .hero-text {
-    max-width: 50%;
+    max-width: 80%;
 }
 
 .hero-text h2 {
@@ -94,13 +92,10 @@ nav ul li a {
 }
 
 .hero-image {
-    background-color: #6B7280;
-    width: 400px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #E5E7EB;
+    width: 100%;
+    max-width: 400px; /* Limit size on larger screens */
+    height: auto;
+    margin-top: 20px;
 }
 
 /* Information Section */
