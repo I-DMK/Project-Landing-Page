@@ -56,6 +56,13 @@ nav ul li a {
     font-size: 18px;
 }
 
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+
 /* Hero Section */
 .hero {
     display: flex;
@@ -66,8 +73,9 @@ nav ul li a {
 }
 
 .hero-text {
-    max-width: 80%;
+    max-width: 600px; /* Prevents text from becoming too wide */
 }
+
 
 .hero-text h2 {
     font-size: 48px;
@@ -96,6 +104,10 @@ nav ul li a {
     background-color: #2563eb; /* Darker blue on hover */
 }
 
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
 .hero-image img {
     width: 100%;
     max-width: 400px;
@@ -103,6 +115,7 @@ nav ul li a {
     display: block;
     border-radius: 10px;
 }
+
 
 
 /* Information Section */
@@ -118,12 +131,13 @@ nav ul li a {
     margin-bottom: 30px;
 }
 
-.info-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
 
 .info-item {
     width: 100%;
@@ -147,7 +161,8 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 
+    margin: 10px auto;
+}
 
     /* Quote Section */
 .quote {
