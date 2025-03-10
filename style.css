@@ -7,9 +7,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #F9FAF8;
+    background-color: #F9FAF8; /* Light background */
     color: #1F2937;
 }
+
 
 /* Improve Section Spacing */
 section {
@@ -52,9 +53,10 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #E5E7EB;
+    color: #E5E7EB; /* Lighter gray */
     font-size: 18px;
 }
+
 
 .nav-links {
     display: flex;
@@ -65,27 +67,29 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
+    background-color: #1F2937; /* Dark navy blue */
     display: flex;
-    flex-direction: column; /* Stack items on small screens */
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    padding: 80px 10%;
+    text-align: left;
+    padding: 100px 10%;
 }
+
 
 .hero-text {
-    max-width: 600px; /* Prevents text from becoming too wide */
+    max-width: 50%;
 }
-
 
 .hero-text h2 {
     font-size: 48px;
     font-weight: 900;
-    color: #F9FAF8;
+    color: #F9FAF8; /* Bright white */
 }
+
 
 .hero-text p {
     font-size: 18px;
-    color: #E5E7EB;
+    color: #E5E7EB; /* Ensure visibility */
     margin-top: 10px;
 }
 
@@ -105,15 +109,13 @@ nav ul li a {
 }
 
 .hero-image {
-    display: flex;
-    justify-content: center;
+    max-width: 400px;
 }
+
 .hero-image img {
     width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: block;
     border-radius: 10px;
+    display: block;
 }
 
 
@@ -127,31 +129,32 @@ nav ul li a {
 .info h3 {
     font-size: 36px;
     font-weight: 900;
-    color: #1F2937;
-    margin-bottom: 30px;
+    color: #1F2937; /* Dark blue */
 }
 
-@media (max-width: 768px) {
-    .info-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 80%;
+    margin: auto;
+}
 
 .info-item {
-    width: 100%;
-    max-width: 150px;
     text-align: center;
+    width: 200px; /* Ensure equal box sizes */
 }
 
 .info-item img {
     width: 100%;
-    max-width: 120px;
+    max-width: 150px;
     height: auto;
     border: 3px solid #3882F6;
     border-radius: 10px;
 }
+
 
 .info-box {
     width: 120px;
@@ -168,11 +171,12 @@ nav ul li a {
 .quote {
     background-color: #E5E7EB;
     text-align: center;
-    padding: 80px 15%;
+    padding: 60px 10%;
     font-style: italic;
     font-size: 36px;
     color: #1F2937;
-}
+ }
+    
 
 .quote-author {
     font-style: normal;
@@ -182,13 +186,13 @@ nav ul li a {
 }
 /* Call-to-Action Section */
 .cta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #3882F6;
+    color: white;
     text-align: center;
-    padding: 50px;
-    max-width: 800px;
+    padding: 40px;
     margin: auto;
+    max-width: 800px;
+    border-radius: 10px;
 }
 
 
@@ -203,27 +207,27 @@ nav ul li a {
 }
 
 .cta button {
-    margin-top: 15px;
     background-color: white;
     color: #3882F6;
     font-size: 18px;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-
 .cta button:hover {
     background-color: #f1f1f1;
 }
 
+
 /* Footer */
 footer {
     background-color: #1F2937;
-    color: #E5E7EB;
+    color: #E5E7EB; /* Light gray */
     text-align: center;
     padding: 30px 0;
     font-size: 14px;
 }
+
 
