@@ -40,9 +40,14 @@ header h1 {
 }
 
 nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;
     gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
 }
 
 nav ul li a {
@@ -91,12 +96,14 @@ nav ul li a {
     background-color: #2563eb; /* Darker blue on hover */
 }
 
-.hero-image {
+.hero-image img {
     width: 100%;
-    max-width: 400px; /* Limit size on larger screens */
+    max-width: 400px;
     height: auto;
-    margin-top: 20px;
+    display: block;
+    border-radius: 10px;
 }
+
 
 /* Information Section */
 .info {
@@ -118,10 +125,18 @@ nav ul li a {
     gap: 30px;
 }
 
-
 .info-item {
     width: 100%;
     max-width: 150px;
+    text-align: center;
+}
+
+.info-item img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
 }
 
 .info-box {
