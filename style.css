@@ -124,3 +124,20 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     margin: 
+
+    /* Quote Section */
+.quote {
+    background-color: #E5E7EB;
+    text-align: center;
+    padding: 80px 15%;
+    font-style: italic;
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.quote-author {
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+}
